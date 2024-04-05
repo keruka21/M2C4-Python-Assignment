@@ -6,16 +6,23 @@ mi_lista = ["a", "b", "c"]
 mi_tupla = (1, 2, 3,)
 mi_float = 21.212121
 mi_entero = 42
-mi_decimal = 1.5
+
+from decimal import Decimal
+mi_decimal = Decimal('1.5')
+print(mi_decimal)
+
 mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
 
 
 
 #Exercise 2: Round your float up.
 
+import math
+
 mi_float = 21.212121
-float_redondeado = round(mi_float)
-print(float_redondeado) #21
+mi_float_redondeado = math.ceil(mi_float)
+print(float_redondeado)  #22
+
 
 
 
